@@ -38,15 +38,15 @@ The network then observes an outgoing transaction and records how much it cost i
 
 ## **Outbound Fee**
 
-The user is charged an amount that is **three times** the stored gas cost for each chain. The Node can then pay a gas price that is **1 times** the gas price, and the pool is subsidised a value that is **twice** what was observed. This means the LPs earn a margin of 1x, and the Reserve earns a margin of 1x.
+The user is charged an amount that is **three times** the stored gas cost for each chain. The Node can then pay a gas price that is **1 times** the gas price, and Thorchain is subsidised a value that is **twice** what was observed. This means the LPs earn a margin of 1x, and the Reserve earns a margin of 1x.
 
 Example:
 
 | Chain | Typical | Fee | Node Pays | LP Gets | Reserve Earns |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Bitcoin | $1 | $3 | $1 | $2 | $3 |
-| Ethereum | $10 | $30 | $10 | $20 | $30 |
-| Binance Chain | $0.03 | $0.09 | $0.03 | $0.06 | $0.09 |
+| Bitcoin | $1 | $3 | $1 | $1 | $1 |
+| Ethereum | $10 | $30 | $10 | $10 | $10 |
+| Binance Chain | $0.03 | $0.09 | $0.03 | $0.03 | $0.03 |
 
 The Network Fee is collected in RUNE and sent to the Protocol Reserve. If the transaction involves an asset which is not RUNE the user pays the Network Fee in the external asset. Then the equivalent is taken from that pool's RUNE supply and added to the Protocol Reserve.
 
